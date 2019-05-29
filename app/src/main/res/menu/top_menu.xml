@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/txt_sort_by_author" android:id="@+id/mnAuthorSort"/>
+    <item android:title="@string/txt_sort_by_title" android:id="@+id/mnTitleSort"/>
+    <item android:title="@string/txt_sorty_by_date" android:id="@+id/mnDateSort"/>
+    <item android:title="@string/item" android:icon="@android:drawable/ic_menu_add" android:visible="true"
+          android:checkable="false" android:id="@+id/btnAddItem" app:showAsAction="always"/>
+</menu>

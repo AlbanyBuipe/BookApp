@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="395dp"
+            android:layout_height="120dp"
+            android:padding="12dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:textAlignment="textStart">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" app:srcCompat="@android:drawable/ic_menu_delete"
+                    android:id="@+id/imgDelete"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imgEdit" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="46dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="11dp" app:layout_constraintStart_toEndOf="@+id/txtAuthor"
+                    android:layout_marginStart="26dp" android:contentDescription="@string/txt_del_description"/>
+            <TextView
+                    android:id="@+id/txtDate"
+                    android:text="@string/txt_date"
+                    android:layout_width="156dp"
+                    android:layout_height="0dp" android:textColor="#4BCFC3"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtAuthor"
+                    android:layout_marginBottom="9dp" app:layout_constraintEnd_toEndOf="@+id/txtAuthor"
+                    android:textSize="13sp"/>
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" app:srcCompat="@android:drawable/ic_menu_edit"
+                    android:id="@+id/imgEdit"
+                    android:layout_marginTop="13dp" app:layout_constraintStart_toEndOf="@+id/txtAuthor"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="11dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imgDelete" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="11dp" android:contentDescription="@string/txt_edt_description"/>
+            <TextView
+                    android:id="@+id/txtAuthor"
+                    android:text="@string/txt_author"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" android:textColor="#4BCFC3"
+                    android:layout_marginTop="56dp" app:layout_constraintStart_toEndOf="@+id/picView"
+                    app:layout_constraintEnd_toStartOf="@+id/imgEdit" android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/txtDate" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="26dp" android:textAlignment="textStart" android:textStyle="italic"
+                    android:textSize="13sp"/>
+            <TextView
+                    android:id="@+id/txtTitle"
+                    android:text="@string/txt_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingTop="6dp"
+                    android:layout_width="245dp"
+                    android:layout_height="44dp" android:textColor="#3F51B5"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/txtAuthor"
+                    app:layout_constraintStart_toStartOf="@+id/txtAuthor"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAuthor" android:textAlignment="textStart"/>
+            <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@android:drawable/btn_star_big_off"
+                    android:id="@+id/picView" android:contentDescription="@string/todo"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                    app:layout_constraintEnd_toStartOf="@+id/txtAuthor" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtTitle" android:layout_marginEnd="8dp"
+                    app:layout_constraintVertical_bias="0.586"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

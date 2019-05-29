@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Nexus Book App</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_author">Author</string>
+    <string name="txt_date">Date</string>
+    <string name="todo">TODO</string>
+    <string name="txt_del_description">Delete book</string>
+    <string name="txt_edt_description">Edit book</string>
+    <string name="item">Add item</string>
+    <string name="txt_reading_list_button">Reading List</string>
+    <string name="txt_add_book_btn">Add a Book</string>
+    <string name="hnt_title">Enter Title of Book</string>
+    <string name="hnt_first_name">Enter Author\'s First Name</string>
+    <string name="hnt_last_name">Enter Author\'s Last Name</string>
+    <string name="btn_save_book">Add Book</string>
+    <string name="btn_discard_book">Cancel</string>
+    <string name="txt_sort_by_author">Sort by Author</string>
+    <string name="txt_sort_by_title">Sort by Title</string>
+    <string name="txt_sorty_by_date">Sort by Date</string>
+</resources>
